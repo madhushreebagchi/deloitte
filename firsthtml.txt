@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Deloitte</title>
+</head>
+<body bgcolor="Madhushree" background="product.jpg"/>
+<center>Product Management System</center>
+<hr color="red" size="20"/>
+<h1>hello</h1>
+<h2>bye</h2>
+
+<p>N</p>
+<address>7/11,6th floor,BTM</address>
+<marquee>thanks</marquee>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Deloitte</title>
+</head>
+<body>
+<h1>Welcome to Blore</h1>
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Deloitte</title>
+</head>
+<body>
+<h1>I am Madhu</h1>
+<img src="product.jpg"height="300"width="300"
+alt="Image is loading...">
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Deloitte</title>
+</head>
+<body>
+<h1>I am Madhu</h1>
+<img src="product.jpg"height="300"width="300"
+alt="Image is loading...">
+</br>
+<a href= "#profile">Profile</a>
+</br>
+<a href = "#product">Product</a>
+<br/>
+<a href = "#current">Current</a>
+<br/>
+<br/>
+<a href = "first.html">Home</a>
+<pre>
+
+
+
+
+
+
+
+
+
+
+<a name="profile">
+My profile</a>
+description
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="#top">Top</a>
+<a name="product">product details</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="#top">Top</a>
+<a name="current">my current status</a>
+my current status
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="#top">Top</a>
+</pre>
+</body>
+</html>
