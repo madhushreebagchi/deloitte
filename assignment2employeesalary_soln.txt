@@ -1,0 +1,31 @@
+create table employ
+(
+employeeid integer constraint eid primary key,
+employeename varchar2(20) constraint enam not null,
+employeeaddress varchar2(20) constraint checkAddr check (employeeaddress not in('Newyork','London','Paris')),
+salary integer constraint checksal check(salary between 20000 and 30000),
+companyaddres varchar(20) default 'ASV Suntech Park'
+)
+
+
+insert into employ values(1,'Pulkit','Pune',23000,'Hitech city');
+insert into employ values(2,'Pulkit','Pune',25000,null)
+delete employ where employeeid=2;
+insert into employ values(2,'Pulkit','Pune',25000,default)
+update employ set employeename='Ankit' where employeeid=2;
+update employ set employeeaddress='Bombay' where employeeid=2;
+select * from employ;
+
+create table salary
+(
+employeeid integer constraint emid primary key,
+employeepf integer constraint epf check(employeepf>0),
+employeehra integer constraint ehra check(employeehra>0)
+)
+alter table salary add constraint fkemdpt foreign key(employeeid) references employ(employeeid);
+select * from salary;
+select * from employ;
+
+insert into salary values(1,2000,4000);
+
+insert into salary values(2,2500,2000);

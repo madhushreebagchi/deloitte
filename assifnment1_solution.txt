@@ -1,0 +1,27 @@
+create table employes
+(
+employeeid integer primary key not null,
+employeename varchar2(20) not null,
+employeeaddress varchar2(20) not null,
+dob date not null,
+doj date not null,
+salary integer
+)
+insert into employes values(1,'Osum','Pune','04-02-1999','01-04-2019',45000);
+insert into employes values(2,'Amin','Goa','01-03-1998','11-05-2020',40000);
+insert into employes values(3,'Ojas','Kolkata','12-02-1999','05-03-2019',17000);
+insert into employes values(4,'Ajay','Bombay','01-03-1998','11-05-2020',70000);
+insert into employes values(5,'Alok','Ranchi','07-03-1996','12-06-2020',60000);
+update employes set employeeaddress='Ropar' where employeeid=4;
+update employes set salary=4000 where employeeid=2;
+select * from employes;
+select employeename from employes where salary>20000;
+select employeename from employes where employeeaddress like '%a' or employeeaddress like '%p'or employeeaddress like '%r';
+select employeeid,employeename,employeeaddress,dob,doj,1.2*salary from employes;
+delete from employes where salary<5000;
+alter table employes add email varchar(20);
+update employes set email='osum@deloitte.com' where employeeid=1;
+update employes set email='ojas@deloitte.com' where employeeid=3;
+update employes set email='ajay@deloitte.com' where employeeid=4;
+update employes set email='alok@deloitte.com' where employeeid=5;
+
