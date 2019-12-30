@@ -1,0 +1,23 @@
+<html>
+<head>
+<script>
+total=0;//global variable
+function sum(){
+	y=20;//local as well as global variable
+	var x=10;//local variable, any variable declared with var in a func becomes local to that func,if var keyword is removed x will also be local global
+	total = x + y;
+}
+function display(){
+	sum();
+	alert(total);//30
+	alert(y);//30, y can be accessed because sum is called
+	//alert(x);//not defined
+}
+</script>
+</head>
+<body>
+<script>
+display();
+</script>
+</body>
+</html>
