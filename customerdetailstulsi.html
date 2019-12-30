@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>customerForm</title>
+<script type="text/javascript">
+function validate()
+{
+	//alert("validate called");
+	var uid=document.getElementById("customerId").value;
+	var uname=document.getElementById("customerName").value;
+	var caddress=document.getElementById("customeraddress").value;
+	var cbill=document.getElementById("billamount").value;
+	var errorid=document.getElementById("id");
+	var errorcname=document.getElementById("name");
+	var errorbill=document.getElementById("bill");
+	var erroraddress=document.getElementById("address");
+	var value1=document.getElementById("value1");
+	if(uid.length==0)
+		{
+		errorid.innerHTML="<font color=red>please enter a customer id</font>"
+		}
+	else if(uid.length<5)
+		{
+		errorid.innerHTML="<font color=red>customer id needs to be more than 5</font>"
+		}
+	else if(uname.length==0)
+		{
+		errorid.innerHTML="";
+		errorcname.innerHTML="<font color=red>please enter customer name</font>"
+		}
+	else if(caddress.length==0)
+		{
+		errorid.innerHTML="";
+		errorcname.innerHTML="";
+		erroraddress.innerHTML="<font color=red>please enter address</font>"
+		}
+	else if(caddress!="Pune"&& caddress!="Mumbai" && caddress!="Delhi")
+		{
+		errorid.innerHTML="";
+		errorcname.innerHTML="";
+		
+		erroraddress.innerHTML="<font color=red>address should be pune,mumbai or delhi </font>"
+		}
+	else if(cbill<0)
+		{
+		errorid.innerHTML="";
+		errorcname.innerHTML="";
+		erroraddress.innerHTML="";
+		errorbill.innerHTML="<font color=red>bill should be more than 0 </font>"
+		}
+	else
+		{
+		errorid.innerHTML="";
+		errorcname.innerHTML="";
+		erroraddress.innerHTML="";
+		errorbill.innerHTML="";
+		value1.innerHTML="<font color=blue>Congrats ,your customer saved successfully  </br></br>The customer details are::"+"</br>customer name"+uname+"</br>customer id"+uid+"</br>customer address"+caddress+"</br>customer bill amount"+cbill+"</font>"
+		}
+}
+</script>
+</head>
+<body>
+<h1 align="center">Customer Form</h1>
+<table cellspacing="10" cellpadding="10" align="center" border="2">
+<tr>
+<td>Customer Id</td>
+<td><input type="text" name="customerId" id="customerId">
+	<div id="id"></div></td>
+</tr>
+<tr>
+<td>Customer Name</td>
+<td><input type="text" name="customerName" id="customerName">
+<div id="name"></div></td>
+</tr>
+<tr>
+<td>Customer Address</td>
+<td><input type="text" name="customeraddress" id="customeraddress">
+<div id="address"></div></td>
+</tr>
+<tr>
+<td>Bill Amount</td>
+<td><input type="text" name="billAmount" id="billamount">
+<div id="bill"></div></td>
+</tr>
+</tr>
+<tr>
+<td align="center"><input type="submit" value="Save">
+					<input type="button" value="click" onclick="validate()"></td>
+<td align="center"><input type="reset" value="clear"></td>
+</tr>
+</table>
+<div align ="center" id="value1"></div>
+
+</body>
+</html>
