@@ -1,0 +1,25 @@
+<html>
+<body>
+<script type="text/javascript">
+
+	
+	var today=new Date();
+	var lastdate=new Date();
+	month=lastdate.getMonth();
+	lastdate.setFullYear(2019,month,15);
+	amount=prompt("Enter bill amount: ","0");
+	
+	if(today>lastdate)
+		{
+		var day = 1000 * 60 * 60 *24;
+		x = (today-lastdate)/day;
+		finalamount = (x*50)+amount;
+		alert("Total amount= "+finalamount);
+		}
+	else{
+		alert("Total amount= "+amount);
+	}
+
+</script>
+</body>
+</html></html>

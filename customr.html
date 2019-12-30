@@ -1,0 +1,100 @@
+<html>
+<head>
+<script type="text/javascript">
+function validate()
+{
+	var customerId=document.getElementById("customerId").value
+	var errorMessagecustomerId=document.getElementById("errorMessagecustomerId")
+	var customerName=document.getElementById("customerName").value
+	var errorMessagecustomerName=document.getElementById("errorMessagecustomerName")
+	var customerAddress=document.getElementById("customerAddress").value
+	var errorMessagecustomerAddress=document.getElementById("errorMessagecustomerAddress")
+	var billamount=document.getElementById("billamount").value
+	var errorMessagebillamount=document.getElementById("errorMessagebillamount")
+	
+	
+	
+	         errorMessagecustomerId.innerHTML=""
+	         errorMessagecustomerName.innerHTML=""
+		     errorMessagecustomerAddress.innerHTML=""
+			 errorMessagebillamount.innerHTML=""
+	if(customerId.length==0){
+		errorMessageerrorMessagecustomerId.innerHTML="<font color=red>Please enter your customer Id</font>"
+	}
+	else if(customerId.length<5)
+	{
+		errorMessagecustomerId.innerHTML="<font color=red>Customer Id must be of atleast 5 digits</font>"
+	}
+	
+	else if(customerName.length==0)
+		{
+		errorMessagecustomerName.innerHTML="<font color=red>Please enter Customer Name</font>"
+		}
+	else if(customerAddress.length==0)
+		{
+		errorMessagecustomerAddress.innerHTML="<font color=red>Please enter Customer Address</font>"
+		}
+	else if((customerAddress!="Pune")||(customerAddress!="Mumbai")||(customerAddress!="Delhi"))
+		{
+		errorMessagecustomerAddress.innerHTML="<font color=red>Please enter Customer Address as Pune, Mumbai or Delhi</font>"
+		}
+	
+	else if(billamount=="")
+		{
+		errorMessagebillamount.innerHTML="<font color=red>Please enter bill amount</font>"
+		}
+	else if(billamount<=0)
+		{
+		errorMessagebillamount.innerHTML="<font color=red>Please enter bill amount</font>"
+		}
+	else{
+		   errorMessagecustomerId.innerHTML=""
+	         errorMessagecustomerName.innerHTML=""
+		     errorMessagecustomerAddress.innerHTML=""
+			 errorMessagebillamount.innerHTML=""
+				 value1.innerHTML="<font color=blue>Congrats, Your customer saved successfully</font>"
+	}
+	
+	}
+	</script>
+	</head>
+<body>
+<form>
+
+		<table cellspacing="10" cellpadding="10" align="center" border="1">
+			<caption>
+				<h2>Customer Form</h2>
+			</caption>
+			<tr>
+				<td>Customer Id</td>
+				<td><input type="text" name="customerId" id="customerId"></td>
+				<td><span id="errorMessagecustomerId"></span></td>
+			</tr>
+			<tr>
+				<td>Customer Name</td>
+				<td><input type="text" name="customerName" id="customerName"></td>
+				<td><span id="errorMessagecustomerName"></span></td>
+			</tr>
+			<tr>
+				<td>Customer Address</td>
+				<td><input type="text" name="customerAddress"
+					id="customerAddress"></td>
+				<td><span id="errorMessagecustomerAddress"></span></td>
+			</tr>
+			<tr>
+				<td>Bill Amount</td>
+				<td><input type="text" name="billAmount" id="billAmount"></td>
+				<td><span id="errorMessagebillamount"></span></td>
+			</tr>
+			<tr>
+				<td align="center"><input type="submit" value="Save">
+				<input type="submit"value="Go"onclick="validate()">
+				<td align="center"><input type="reset" value="Clear">
+				</td>
+			</tr>
+			</br>
+			
+		</table>
+	</form>
+	</body>
+	</html>
