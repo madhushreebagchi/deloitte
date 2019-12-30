@@ -2,14 +2,41 @@
 <html>
 <head>
 <script type="text/javascript">
+function display()
+{
 var num1 = prompt("enter 1st no.","12");
 var num2 = prompt("enter 2nd no.","20");
-var res = parseInt(num1)+parseInt(num2);
-alert("The sum of two numbers is : "+res);
+var result = parseInt(num1)+parseInt(num2);
+alert("The sum of two numbers is : "+result);
+}
+function demo(){
+	var res = confirm("Do u wanna continue?");
+	if(res == true)
+		{
+		alert("ok clicked");
+		}
+	else{
+		alert("Cancel clicked");
+	}
+}
+function mohan(num){
+	alert("You have given :"+num);
+}
+function displaygreetings(msg){
+	if(msg == null)
+		msg="Good Night"
+		alert(msg)
+}
+
 </script>
 </head>
 <body>
 <h1>Hello Javascript</h1>
 <h1>Hello HTML</h1>
+<input type="button" value="Go"onclick="display()"></br>
+<input type="button" value="Demo"onclick="demo()"></br>
+<input type="button" value="Mohan"onclick="mohan(99)"></br>
+<input type="button" value="Greetings1"onclick="displaygreetings()"></br>
+<input type="button" value="Greetings2"onclick="displaygreetings('Good Morning')"></br>
 </body>
 </html>
