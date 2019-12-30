@@ -1,0 +1,31 @@
+<html>
+<head>
+<script type="text/javascript">
+function display(){
+	
+	name=prompt("Enter your full name : ","Madhushree Bagchi");
+	check = confirm("Do u wanna continue?");
+	val=name.substr(0,1);
+	vale=name.indexOf(" ");
+	last=name.substr(vale,name.length);
+	che=name.split(" ");
+	st=che[0].substr(0,1);
+	el=che[1];
+	if(check == true)
+		{
+		//alert("Welcome, "+val+last); alternate method
+		alert("Welcome, "+st+ " "+el);
+		
+		}
+	else{
+		alert("Thanks "+ name);
+	}
+}
+</script>
+</head>
+<body>
+<script>
+display()
+</script>
+</body>
+</html>
