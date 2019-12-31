@@ -118,3 +118,145 @@ function validate()
 </body>
 </html>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------------------------------------------------
+
+
+
+<html>
+<head>
+<title>Validate</title>
+<script>
+	function check() {
+	var username=document.getElementById("username").value;
+    var usernameerror=document.getElementById("usernameerror");
+    
+	var ifmale = document.getElementById("male").checked;
+	var iffemale = document.getElementById("female").checked;
+    
+	/*var ifliked = document.getElementById("Like").checked;
+	var ifnotliked = document.getElementById("Don't Like").checked;*/
+	if(username.length==0){
+    usernameerror.innerHTML="You have not entered Username!"
+	} 
+    else
+	{   
+	usernameerror.innerHTML="user name: "+username;
+    }
+    
+	/*else {
+	var gender = document.getElementsByName('gendererror');
+	 if (ifmale == true)
+	{
+		gendererror.innerHTML="Your Gender is : Male";
+	}
+	 else if (ifmale == null)
+	{
+		gendererror=document.getElementById("gendererror");
+		gendererror.innerHTML="Name : "+gendererror;	} 
+	else if (iffemale == true)
+	{
+	var gender = document.getElementsByName('gendererror');
+	gendererror.innerHTML="Your Gender is : Female ";
+	
+	}
+	 else
+	
+	{
+	gendererror.innerHTML="You haven't chosen gender!"
+	} 
+	 if (ifliked == true)
+	{ commentserror=document.getElementById("commentserror");
+	
+	commentserror.innerHTML="Your comment is : liked! "; 
+	}
+	 else if (ifliked == null)
+	{
+	commentserror.innerHTML="You haven't chosen comments!"
+	} 
+	else if (ifnotliked == true)
+	{
+	
+	commentserror.innerHTML="Your comment is : not liked! "; 
+	}
+	 else
+	{
+	alert("You haven't chosen comments!")
+	} 
+}
+}*/
+}
+</script>
+</head>
+<body>
+<form onsubmit="return validate()">
+<table cellspacing="10" cellpadding="10" align="center" border="2" bgcolor="pink">
+      <caption><h2>CUSTOMER FORM</h2></caption>
+
+     <tr>
+        <td>User Name</td>
+        <td><input type="text" name= "username" id="username"></td>
+    </tr>
+   	<tr>
+   		<td>Spouse Name</td>
+   		<td><input type="text" name= "spousename" id="spousename"></td>
+    </tr>
+	<tr>
+    	<td>Gender</td> 
+        <td><input type=radio name="gender" value="male">Male</br>
+        <input type=radio name="gender" value="female">Female</td>
+	</tr>
+    <tr>
+    	<td>Comments</td> 
+        <td><input type=radio name="like" value="like">like</br> 
+        <input type=radio name="dontlike" value="dontlike">dont like</td>
+	</tr>
+    <tr>
+    	<td colspan="2" align="center">
+        <input type="button" value = "submit" onclick = "check()"></td>
+	</tr>
+    <tr>
+    	<tr><td colspan="2"><div id= "usernameerror" ></div></td></tr>
+		<tr><td colspan="2"><div id= "gendererror"></div></td></tr>
+		<tr><td colspan="2"><div id= "commentserror"></div></td></tr>
+    </tr>
+</table>
+</form>
+</body>
+</html>
+
+---------------------------------------------------------------------------------------------------------------------
+<ASSIGNMENT1>
+<html>
+  <head>
+        <title>Add program</title>
+        <script language="javascript">
+                function demo()
+                {
+                        var val1 = parseInt(document.getElementById("value1").value);
+                        var val2 = parseInt(document.getElementById("value2").value);
+                        var ansD = document.getElementById("answer");
+                        ansD.value = val1 + val2;
+                }
+        </script>
+  </head>
+  <body>
+        NUMBER1 <input type="text" id="value1" name="value1" />
+        NUMBER2 <input type="text" id="value2" name="value2" />
+        RESULT <input type="text" id="answer" name="answer" />
+        <input type="button"  value = "Submit" onclick="demo()"/>
+       
+  </body>
+</html
