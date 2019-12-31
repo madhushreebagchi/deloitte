@@ -1,0 +1,50 @@
+
+.pla{
+	color:maroon;
+	text-transform: uppercase;
+}
+p#p1
+{
+	color:teal;
+}
+p.currentplayers{
+background-color: red;
+text-align: center;
+color: white;
+text-transform: lowercase;
+font-family: times new roman;
+font-size: 20px;
+
+}
+p.explayers{
+background-color: blue;
+text-align: center;
+color: white;
+text-transform: uppercase;
+font-family: cursive;
+font-size: 20px;
+
+}
+h1{
+	background-color:lime
+}
+h4{
+background-color: pink;
+text-decoration: bold;
+
+}
+/*body{
+background-image: url("product.jpg");
+background-repeat: repeat-y;
+}*/
+A:link{
+color:pink;
+}
+A:visited{
+color:red;
+}
+A:link{
+color:green;
+}
+
+</style>
