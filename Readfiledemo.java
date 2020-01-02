@@ -1,4 +1,5 @@
 package generics;
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
 import java.io.FileNotFoundException;
@@ -10,8 +11,9 @@ public class Readfiledemo {
 		//File file=new File("c:"+fs+"Deloitte"+fs+"Batch"+fs+"notes.txt");
 		File file=new File("mohan.txt");
 		FileReader reader=new FileReader(file);
+		BufferedReader br=new BufferedReader(reader);
 		int i=0;
-		while((i=reader.read())!=-1)
+		while((i=br.read())!=-1)
 		{
 			System.out.print((char)i);
 		}
