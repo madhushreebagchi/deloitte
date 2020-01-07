@@ -1,12 +1,9 @@
-package oops;
+package com.cms.deloitte.client;
 
 public class Client {
 
 	public static void main(String[] args) {
-		
-		Employee employee = new Employee();
-		employee.takeSalary();
-		employee.printEmployeeDetails();
+		LaunchCustomerApplication.startCustomerApp();
 
 	}
 
