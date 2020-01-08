@@ -32,7 +32,7 @@ public class InstructionServlet extends HttpServlet {
 		String username=request.getParameter("username");
 		HttpSession session=request.getSession();
 		session.setAttribute("username", username);
-		RequestDispatcher dispatcher=request.getRequestDispatcher("Instructions.html");
+		RequestDispatcher dispatcher=request.getRequestDispatcher("Instructions.jsp");
 		dispatcher.forward(request,response);
 	}
 
