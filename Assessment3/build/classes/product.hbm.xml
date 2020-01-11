@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+	<class name="com.cms.deloitte.model.Product" table="hr.Product42">
+	
+		<id name="productId" type="int" column="proId">
+			<generator class="assigned"/>
+		</id>
+
+		<property name="productName" column="prodName" />
+	<property name="Qoh" column="qoh" />
+<property name="price" column="price" />
+	</class>
+</hibernate-mapping>
