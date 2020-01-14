@@ -1,0 +1,30 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<body>
+<body>
+	<%
+	
+		String user = (String) session.getAttribute("user");
+		%>
+
+	
+	<form>
+		<table cellspacing="10" cellpadding="10" >
+			<tr>
+				<td>Select User</td>
+				<td>
+					<select name="user" id="user">
+					<option value="user">user</option>
+					
+				</td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="SUBMIT"></td>
+			</tr>
+		</table>
+	</form>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>ADMIN LOGIN</title>
+</head>
+<body>
+	<form action="addQuestion.html">
+		<table cellspacing="10" cellpadding="10" align="center">
+			<caption>
+				<h2>ADMIN LOGIN</h2>
+			</caption>
+			<tr>
+				<td>Input Text</td>
+				<td>
+					<input type="text" name="inputtext" id="inputtext">
+				</td></tr>
+			
+			
+			<tr><td>Password</td>
+				<td>
+					<input type="password" name="password" id="password">
+				</td>
+               </tr>
+				<td align="center" colspan="2"><input type="submit" value="LOG IN"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

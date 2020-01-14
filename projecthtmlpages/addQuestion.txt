@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>ADD QUESTION</title>
+</head>
+<body>
+	<form action="QuestionController">
+		<table cellspacing="10" cellpadding="10" align="center">
+			<caption>
+				<h2>ADD QUESTION</h2>
+			</caption>
+			<tr>
+				<td>Enter Question: </td>
+				<td>
+					<input type="text" name="question" id="question">
+				</td>
+			</tr>
+			<tr>
+				<td>Choice 1</td>
+				<td>
+					<input type="text" name="choice1" id="choice1">
+				</td></br>
+               <tr> <td>Choice 2</td>
+				<td>
+					<input type="text" name="choice2" id="choice2">
+				</td></tr>
+             <tr>   <td>Choice 3</td>
+				<td>
+					<input type="text" name="choice3" id="choice3">
+				</td>
+			</tr>
+			<tr>
+				<td align="center"><input type="submit" value="LOG IN"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

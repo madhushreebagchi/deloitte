@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+
+</head>
+<body>
+	<form action="questions">
+		<table cellspacing="10" cellpadding="10" >
+			<tr>
+				<td>Select Category</td>
+				<td>
+					<select name="category" id="category">
+					<option value="verbal">VERBAL</option>
+					<option value="aptitude">APTITUDE</option>
+					<option value="gk">GENERAL KNOWLEDGE</option>
+				</td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="Submit"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
